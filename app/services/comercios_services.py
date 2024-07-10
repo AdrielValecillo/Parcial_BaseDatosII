@@ -1,7 +1,7 @@
 from app.services.base import Base
 from app.db.models import Comercio
 from app.api.schemas.schemas_comercios import ComercioBase
-from fastapi import HTTPException
+
 
 class ComercioServices(Base):
 
