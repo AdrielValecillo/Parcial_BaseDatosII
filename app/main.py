@@ -3,6 +3,7 @@ from app.db.database import engine
 import app.db.models as db_models
 from app.api.endpoints.comercios import comercio_router
 from app.api.endpoints.servicios import servicio_router
+from app.api.endpoints.turnos import turno_router
 from app.api.schemas import schemas_comercios as schemas
 from app.services.comercios_services import ComercioServices
 
@@ -18,6 +19,7 @@ async def root():
 
 app.include_router(comercio_router)
 app.include_router(servicio_router)
+app.include_router(turno_router)
 
 
 
